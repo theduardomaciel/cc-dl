@@ -13,7 +13,7 @@ Repositório com notas de aula, tarefas e materiais de estudo da disciplina de *
 ### 🧪 `/tasks` - Tarefas Práticas
 
 <details open>
-<summary>Exercícios de implementação com código incompleto a ser preenchido:</summary>
+<summary><b>Exercícios de implementação com código incompleto a ser preenchido:</b></summary>
 
 - **task-01-simple-perceptron** - Implementação do algoritmo de aprendizado do Perceptron do zero, com dados sintéticos (`make_blobs`) e visualização da fronteira de decisão
 - **task-02-halfmoon-perceptron** - Aplicação do Perceptron a dados não linearmente separáveis (formato "halfmoon"), demonstrando as limitações de classificadores lineares
@@ -22,8 +22,8 @@ Repositório com notas de aula, tarefas e materiais de estudo da disciplina de *
 
 ### 📓 `/lecture-notes` - Notas de Aula
 
-<details>
-<summary>Slides, PDFs e materiais complementares das aulas, organizados por capítulo:</summary>
+<details open>
+<summary><b>Slides, PDFs e materiais complementares das aulas, organizados por capítulo:</b></summary>
 
 - **Ch01-Deep-Learning-Applications** - Aplicações de Aprendizado Profundo
 - **Ch02-Perceptron** - História, convergência e implementação do Perceptron (`simple_perceptron.py`)
@@ -39,7 +39,7 @@ Repositório com notas de aula, tarefas e materiais de estudo da disciplina de *
 ### 📖 `/references` - Livros de Referência
 
 <details>
-<summary>Livros-texto clássicos e atuais sobre redes neurais e aprendizado profundo:</summary>
+<summary><b>Livros-texto clássicos e atuais sobre redes neurais e aprendizado profundo:</b></summary>
 
 - _Deep Learning_ - Ian Goodfellow, Yoshua Bengio e Aaron Courville (MIT Press, 2016)
 - _Neural Networks and Deep Learning: A Textbook_ - Charu C. Aggarwal (Springer, 2023)
