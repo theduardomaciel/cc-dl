@@ -10,6 +10,13 @@ Repositório com notas de aula, tarefas e materiais de estudo da disciplina de *
 
 ## 📋 Estrutura do Repositório
 
+### 🧪 `/tasks` - Tarefas Práticas
+
+Exercícios de implementação com código incompleto a ser preenchido:
+
+- **task-01-simple-perceptron** - Implementação do algoritmo de aprendizado do Perceptron do zero, com dados sintéticos (`make_blobs`) e visualização da fronteira de decisão
+- **task-02-halfmoon-perceptron** - Aplicação do Perceptron a dados não linearmente separáveis (formato "halfmoon"), demonstrando as limitações de classificadores lineares
+
 ### 📓 `/lecture-notes` - Notas de Aula
 
 Slides, PDFs e materiais complementares das aulas, organizados por capítulo:
@@ -25,19 +32,15 @@ Slides, PDFs e materiais complementares das aulas, organizados por capítulo:
 
 ### 📖 `/references` - Livros de Referência
 
-Livros-texto clássicos e atuais sobre redes neurais e aprendizado profundo:
+<details>
+<summary>Livros-texto clássicos e atuais sobre redes neurais e aprendizado profundo:</summary>
 
 - _Deep Learning_ - Ian Goodfellow, Yoshua Bengio e Aaron Courville (MIT Press, 2016)
 - _Neural Networks and Deep Learning: A Textbook_ - Charu C. Aggarwal (Springer, 2023)
 - _Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow_ - Aurélien Géron (2ª edição)
 - _Deep Learning with Python_ (3ª edição)
 
-### 🧪 `/tasks` - Tarefas Práticas
-
-Exercícios de implementação com código incompleto a ser preenchido:
-
-- **task-01-simple-perceptron** - Implementação do algoritmo de aprendizado do Perceptron do zero, com dados sintéticos (`make_blobs`) e visualização da fronteira de decisão
-- **task-02-halfmoon-perceptron** - Aplicação do Perceptron a dados não linearmente separáveis (formato "halfmoon"), demonstrando as limitações de classificadores lineares
+</details>
 
 ## 🚀 Como Executar
 
