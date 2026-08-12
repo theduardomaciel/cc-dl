@@ -12,14 +12,18 @@ Repositório com notas de aula, tarefas e materiais de estudo da disciplina de *
 
 ### 🧪 `/tasks` - Tarefas Práticas
 
-Exercícios de implementação com código incompleto a ser preenchido:
+<details open>
+<summary>Exercícios de implementação com código incompleto a ser preenchido:</summary>
 
 - **task-01-simple-perceptron** - Implementação do algoritmo de aprendizado do Perceptron do zero, com dados sintéticos (`make_blobs`) e visualização da fronteira de decisão
 - **task-02-halfmoon-perceptron** - Aplicação do Perceptron a dados não linearmente separáveis (formato "halfmoon"), demonstrando as limitações de classificadores lineares
 
+</details>
+
 ### 📓 `/lecture-notes` - Notas de Aula
 
-Slides, PDFs e materiais complementares das aulas, organizados por capítulo:
+<details>
+<summary>Slides, PDFs e materiais complementares das aulas, organizados por capítulo:</summary>
 
 - **Ch01-Deep-Learning-Applications** - Aplicações de Aprendizado Profundo
 - **Ch02-Perceptron** - História, convergência e implementação do Perceptron (`simple_perceptron.py`)
@@ -29,6 +33,8 @@ Slides, PDFs e materiais complementares das aulas, organizados por capítulo:
 - **Ch06-Activation-Functions** - Funções de Ativação
 - **ch06-teaching-dl-to-generalize-5** - Generalização em Aprendizado Profundo
 - **ch07-convolutional-neural-networks** - Redes Neurais Convolucionais (ConvNets)
+
+</details>
 
 ### 📖 `/references` - Livros de Referência
 
