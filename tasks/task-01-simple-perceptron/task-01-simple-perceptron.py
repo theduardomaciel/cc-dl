@@ -86,18 +86,47 @@ class Perceptron:
 def generate_data(seed=0, samples=200, noise=1.5):
     """
     Generates a synthetic binary classification dataset with two overlapping clusters.
+
+    Parameters:
+        seed (int): Random seed used for reproducible dataset generation.
+        samples (int): Total number of samples to generate.
+        noise (float): Standard deviation of the clusters; higher values increase overlap.
+
+    Returns:
+        X (np.ndarray): Feature matrix of shape (samples, 2).
+        y (np.ndarray): Label vector of shape (samples,), with values -1 or 1.
+
+    Notes:
+        - Uses a locally scoped random number generator to avoid affecting global RNG state.
+        - The two clusters are generated using sklearn's make_blobs function.
+        - Class labels are mapped from {0, 1} to {-1, 1} to align with the Perceptron formulation.
     """
     rng = np.random.default_rng(seed)  # Local, isolated RNG
     random_state = rng.integers(0, 1_000_000)  # Random seed for make_blobs
 
     X, y = make_blobs(
-        n_samples=samples, centers=2, cluster_std=noise, random_state=random_state
+        n_samples=samples,
+        centers=2,
+        cluster_std=noise,
+        random_state=random_state,
+        return_centers=False,
     )
     y = np.where(y == 0, -1, 1)  # Convert labels to -1 and 1 for perceptron
     return X, y
 
 
 def plot_decision_boundary(model, X, y):
+    """
+    Plots the decision boundary learned by a binary classifier in a 2D feature space.
+
+    Parameters:
+        model: Trained classifier with a .predict() method that accepts 2D inputs.
+        X (np.ndarray): Input data of shape (n_samples, 2).
+        y (np.ndarray): Target labels of shape (n_samples,), expected to be -1 or +1.
+
+    The function creates a dense grid over the input space, uses the model to predict
+    labels over the grid, and visualizes the decision boundary along with the data points.
+    """
     x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
     y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
     xx, yy = np.meshgrid(np.linspace(x_min, x_max, 100), np.linspace(y_min, y_max, 100))
@@ -121,6 +150,7 @@ def plot_decision_boundary(model, X, y):
 
 
 def main():
+
     X, y = generate_data(39)
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
@@ -128,9 +158,9 @@ def main():
     model = Perceptron(epochs=100)
     model.fit(X_train, y_train)
 
-    y_pred = model.predict(X_test)
-    accuracy = np.mean(y_pred == y_test)
-    print(f"Acurácia no conjunto de teste: {accuracy:.2%}")
+    predictions = model.predict(X_test)
+    accuracy = np.mean(predictions == y_test)
+    print(f"Test Accuracy: {accuracy:.2f}")
 
     plot_decision_boundary(model, X, y)
 
