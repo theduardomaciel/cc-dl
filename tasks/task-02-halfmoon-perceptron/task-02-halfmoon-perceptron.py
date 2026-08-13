@@ -17,25 +17,47 @@ class Perceptron:
         rng = np.random.default_rng(self.seed)
         ### START CODE HERE ###
         ### TODO: Initialize weights with small Gaussian noise using rng.normal
-        pass
+
+        # Vetor de pesos com tamanho input_size + 1 (features + bias),
+        # amostrado de uma gaussiana com média 0 e desvio padrão 0.5.
+        self.weights = rng.normal(loc=0.0, scale=0.5, size=self.input_size + 1)
+
         ### END CODE HERE ###
 
     def activation(self, x):
         ### START CODE HERE ###
         ### TODO: Implement the step activation function
-        pass
+
+        # Degrau: +1 se x >= 0, -1 caso contrário.
+        return np.where(x >= 0, 1, -1)
+
         ### END CODE HERE ###
 
     def predict(self, X):
         ### START CODE HERE ###
         ### TODO: Add bias term, compute dot product with weights, apply activation
-        pass
+
+        # Adiciona a coluna de bias (1s), calcula z = X · w e aplica o degrau.
+        X_bias = np.c_[X, np.ones(X.shape[0])]
+        z = np.dot(X_bias, self.weights)
+        return self.activation(z)
+
         ### END CODE HERE ###
 
     def fit(self, X, y):
         ### START CODE HERE ###
         ### TODO: Implement the perceptron learning algorithm
-        pass
+
+        # Aprendizado online: para cada amostra classificada errado, ajusta
+        # os pesos na direção que reduz o erro (w <- w + learning_rate * y * x).
+        X_bias = np.c_[X, np.ones(X.shape[0])]
+        for epoch in range(self.epochs):
+            for i in range(X_bias.shape[0]):
+                z = np.dot(X_bias[i], self.weights)
+                prediction = self.activation(z)
+                if prediction != y[i]:
+                    self.weights += self.learning_rate * y[i] * X_bias[i]
+
         ### END CODE HERE ###
 
 
@@ -134,7 +156,7 @@ def plot_decision_boundary(model, X, y):
 
     plt.figure(figsize=(8, 6))
     plt.contourf(xx, yy, preds, alpha=0.3, levels=[-1, 0, 1], colors=["red", "blue"])
-    scatter = plt.scatter(X[:, 0], X[:, 1], c=y, cmap="bwr", edgecolor="k", s=20)
+    plt.scatter(X[:, 0], X[:, 1], c=y, cmap="bwr", edgecolor="k", s=20)
     plt.title("Perceptron Decision Boundary on Halfmoon Data")
     plt.xlabel("$x_1$")
     plt.ylabel("$x_2$")
