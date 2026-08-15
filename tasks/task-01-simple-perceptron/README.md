@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./.github/cover.png">
+  <source media="(prefers-color-scheme: light)" srcset="./.github/cover_light.png">
+  <img alt="Atividade 1 - Redes Neurais e Aprendizado Profundo" src="/.github/cover_light.png">
+</picture>
+
 # Perceptron Learning Algorithm - Implementation Exercise
 
 ## Objective
@@ -38,3 +44,4 @@ After completing the required methods, execute the `main()` function to:
 
 ```bash
 python task-01-simple-perceptron.py
+```

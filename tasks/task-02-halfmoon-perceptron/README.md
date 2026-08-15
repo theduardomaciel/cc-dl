@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./.github/cover.png">
+  <source media="(prefers-color-scheme: light)" srcset="./.github/cover_light.png">
+  <img alt="Atividade 2 - Redes Neurais e Aprendizado Profundo" src="/.github/cover_light.png">
+</picture>
+
 # Task 02 – Perceptron on Halfmoon Data
 
 ## Objective
