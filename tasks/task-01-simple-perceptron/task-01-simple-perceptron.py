@@ -30,7 +30,7 @@ class Perceptron:
         ### START CODE HERE ###
         ### TODO: Implement the step activation function
 
-        # Função de ativação degrau (step function):
+        # Função de ativação "degrau" (step function):
         #   - Se a entrada for >= 0, a saída é +1 (classe positiva);
         #   - Caso contrário, a saída é -1 (classe negativa).
         # O np.where aplica essa regra tanto em um único valor quanto em um
@@ -44,15 +44,15 @@ class Perceptron:
         ### START CODE HERE ###
         ### TODO: Add a bias term to X, compute dot product with weights, and apply activation
 
-        # 1) Adiciona uma coluna de 1s ao final de X.
+        # 1) Adicionamos uma coluna de 1s ao final de X.
         #    Essa coluna representa o termo de bias: o peso extra (última posição
         #    de self.weights) é aprendido junto com os demais durante o treinamento.
         X_bias = np.c_[X, np.ones(X.shape[0])]
 
-        # 2) Calcula a combinação linear (soma ponderada): z = X · w
+        # 2) Calculamos a combinação linear (soma ponderada): z = X · w
         z = np.dot(X_bias, self.weights)
 
-        # 3) Aplica a função de ativação degrau para obter a classe prevista (+1 ou -1)
+        # 3) Aplicamos a função de ativação degrau para obter a classe prevista (+1 ou -1)
         return self.activation(z)
 
         ### END CODE HERE ###
@@ -66,9 +66,9 @@ class Perceptron:
 
         # O treinamento é feito em várias épocas (passagens completas pelo dataset).
         for epoch in range(self.epochs):
-            # Percorre cada amostra individualmente (aprendizado online).
+            # Percorremos cada amostra individualmente (aprendizado online).
             for i in range(X_bias.shape[0]):
-                # 1) Calcula a previsão do modelo para a amostra i.
+                # 1) Calculamos a previsão do modelo para a amostra i.
                 z = np.dot(X_bias[i], self.weights)
                 prediction = self.activation(z)
 
