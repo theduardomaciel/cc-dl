@@ -8,4 +8,4 @@
 
 A resolução da atividade, além de estar [disponível neste repositório](./task9.ipynb), também pode ser encontrada no Google Colab:
 
-[![Abir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](PLACEHOLDER)
+[![Abir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HQuzjI1Ull65ZpltMjdIlVBl621wSVbD?usp=sharing)
