@@ -8,4 +8,4 @@
 
 A resolução da atividade, além de estar [disponível neste repositório](./task5.ipynb), também pode ser encontrada no Google Colab:
 
-[![Abir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pqI05sebZheCYN0orF8NIXyBpUd0Mh_J?usp=sharing)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pqI05sebZheCYN0orF8NIXyBpUd0Mh_J?usp=sharing)
