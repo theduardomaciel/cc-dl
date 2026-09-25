@@ -4,7 +4,7 @@
   <img alt="Atividade 8 - Redes Neurais e Aprendizado Profundo" src="/.github/cover_light.png">
 </picture>
 
-# Task 08 – Deep Neural Network
+# Task 08 – Gradient Checking
 
 A resolução da atividade, além de estar [disponível neste repositório](./task8.ipynb), também pode ser encontrada no Google Colab:
 

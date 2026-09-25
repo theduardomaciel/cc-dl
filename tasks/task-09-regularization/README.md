@@ -4,7 +4,7 @@
   <img alt="Atividade 9 - Redes Neurais e Aprendizado Profundo" src="/.github/cover_light.png">
 </picture>
 
-# Task 09 – Deep Neural Network
+# Task 09 – Regularization
 
 A resolução da atividade, além de estar [disponível neste repositório](./task9.ipynb), também pode ser encontrada no Google Colab:
 

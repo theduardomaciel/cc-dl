@@ -4,7 +4,7 @@
   <img alt="Atividade 6 - Redes Neurais e Aprendizado Profundo" src="/.github/cover_light.png">
 </picture>
 
-# Task 06 – Deep Neural Network
+# Task 06 – Deep Neural Network Application for Image Classification
 
 A resolução da atividade, além de estar [disponível neste repositório](./task6.ipynb), também pode ser encontrada no Google Colab:
 

@@ -4,7 +4,7 @@
   <img alt="Atividade 7 - Redes Neurais e Aprendizado Profundo" src="/.github/cover_light.png">
 </picture>
 
-# Task 07 – Deep Neural Network
+# Task 07 – Initialization of Deep Neural Networks
 
 A resolução da atividade, além de estar [disponível neste repositório](./task7.ipynb), também pode ser encontrada no Google Colab:
 
