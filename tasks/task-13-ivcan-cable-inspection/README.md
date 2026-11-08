@@ -8,4 +8,4 @@
 
 A resolução da atividade, além de estar [disponível neste repositório](./task13.ipynb), também pode ser encontrada no Google Colab:
 
-[![Abir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/theduardomaciel/cc-dl/blob/main/tasks/task-13-cnn-application/task13.ipynb)
+[![Abir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/theduardomaciel/cc-dl/blob/main/tasks/task-13-ivcan-cable-inspection/task13.ipynb)
