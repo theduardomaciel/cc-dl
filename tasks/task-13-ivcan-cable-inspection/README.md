@@ -4,7 +4,7 @@
   <img alt="Atividade 13 - Redes Neurais e Aprendizado Profundo" src="/.github/cover_light.png">
 </picture>
 
-# Task 13 – Aplicação de Redes Neurais Convolucionais (CNN) para Inspeção de Cabos IV-CAN
+# Task 13 – Inspeção de Cabos IV-CAN
 
 A resolução da atividade, além de estar [disponível neste repositório](./task13.ipynb), também pode ser encontrada no Google Colab:
 
