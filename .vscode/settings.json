@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python -c \"import json; from pathlib import Path; p=Path\\(r'C:\\\\Users\\\\Eduardo\\\\Documents\\\\UFAL\\\\Matérias\\\\cc-dl\\\\tasks\\\\task-13-ivcan-cable-inspection\\\\task-13\\.ipynb'\\); json\\.loads\\(p\\.read_text\\(encoding='utf-8'\\)\\); print\\('Notebook JSON: valid'\\)\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

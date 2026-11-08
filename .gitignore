@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Task 13 files
+/tasks/task-13-ivcan-cable-inspection/ivcan_zip_extracted
+*.zip
