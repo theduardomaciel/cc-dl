@@ -1,0 +1,3 @@
+﻿alvo,IoU,TPR,FPR,Precisao,Revocacao,Acuracia,Dice_F1,Especificidade
+Cabo,5,5,5,5,5,5,5,5
+Listra,5,5,5,5,5,5,5,5
