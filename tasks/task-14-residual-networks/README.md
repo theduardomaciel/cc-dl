@@ -8,7 +8,7 @@
 
 A resolução da atividade, além de estar [disponível neste repositório](./task14.ipynb), também pode ser encontrada no Google Colab:
 
-[![Abir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](#)
+[![Abir no Colab](https://colab.research.google.com/assets/colab-badge.svg)]([#](https://colab.research.google.com/github/theduardomaciel/cc-dl/blob/main/tasks/task-14-residual-networks/task14.ipynb))
 
 ## ⚠️ Arquivos grandes
 
