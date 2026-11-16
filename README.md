@@ -48,6 +48,10 @@ Repositório com notas de aula, tarefas e materiais de estudo da disciplina de *
 
 </details>
 
+## ⚠️ Arquivos grandes
+
+O arquivo de pesos pré-treinados `ResNet50.h5.zip` não está incluído no repositório porque seu tamanho excede o limite de 100 MB por arquivo do GitHub.
+
 ## 🚀 Como Executar
 
 As tarefas utilizam `numpy`, `matplotlib` e `scikit-learn`. Após completar as partes indicadas nos arquivos, execute:
